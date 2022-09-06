@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
+ import App from './App';
+ import reportWebVitals from './reportWebVitals';
 // import Form from './component/Form';
 // import ParentComponent from './component/ParentComponent';
 // import Register from './component/Register';
@@ -21,22 +21,27 @@ import ChildForm1 from './component/ChildForm1';
 import ChildForm2 from './component/ChildForm2';
 import UseMemoComponent from './component/UseMemoComponent';
 import MyForm from './component/MyForm';
-import App from './App'
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducer'
-const store=createStore(reducer)
-ReactDOM.render(
-   <Provider store={store}>
-<App/>
-   </Provider>
-// <React.StrictMode>
-  // <App/>
-//</React.StrictMode>, 
-,
-document.getElementById('root')
+ //const store=createStore(reducer)
 
+ReactDOM.render(
+   //<Provider store={store}>
+
+  //<App/>
+  
+  // </Provider>
+
+ <React.StrictMode>
+  
+   <App/>
+
+ </React.StrictMode>, 
+   document.getElementById('root')
 );
+
+reportWebVitals();
 
 
 
